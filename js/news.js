@@ -1,6 +1,6 @@
 var variableW = setInterval(function() {
     news();
-}, 180000);
+}, 60000);
 
 function news(){
 
@@ -18,7 +18,7 @@ function news(){
                         title:       $this.find("title").text(),
                         description: $this.find("description").text()
                     };            
-                    $('#newsslider').append('<div class="slide"><p><strong>' + item.title + '</strong><hr style="margin:-0.25em!important; visibility: hidden;" />' + item.description + '</p></div>');
+                    $('#newsslider').append('<div class="slide"><p><strong style="font-size: 1.6rem;">' + item.title + '</strong><hr style="margin:-0.25em!important; visibility: hidden;" />' + item.description + '</p></div>');
             }
             count++;
         });

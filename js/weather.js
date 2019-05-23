@@ -39,7 +39,7 @@ function weather(){
 
     }
 
-    var sunriseURL = 'https://api.sunrise-sunset.org/json?lat=51.96&lng=7.65&formatted=0';
+    var sunriseURL = 'https://api.sunrise-sunset.org/json?lat=LATITUDElng=LONGITUDE&formatted=0';
     var sunriseRequest = new XMLHttpRequest();
     sunriseRequest.open('GET', sunriseURL);
     sunriseRequest.responseType = 'json';
