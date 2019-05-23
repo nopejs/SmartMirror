@@ -1,0 +1,35 @@
+/* [SLIDER] */
+#slider,  #slider .slide{
+    width: 500px;
+  }
+  #slider {
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #slider .container {
+    position: relative;
+    width: 9000px; /* Assign an insanely large width */
+    top: 0;
+    right: 0;
+    animation: slide-animation 30s infinite;
+  }
+  #slider .slide {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+  
+  /* [ANIMATION] */
+  @keyframes slide-animation {
+    0%   { right: 000%; }
+    10%  { right: 000%; }
+    20%  { right: 100%; }
+    30%  { right: 100%; }
+    40%  { right: 200%; }
+    50%  { right: 200%; }
+    60%  { right: 300%; }
+    70%  { right: 300%; }
+    80%  { right: 400%; }
+    100% { right: 400%; }
+  }

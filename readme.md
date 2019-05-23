@@ -1,0 +1,2 @@
+## SmartMirror
+Das hier ist eigentlich primär ein privates Projekt. Sollte trotzdem irgendwer anderes was damit anfangen können: Bittesehr. Bedien dich. Du musst lediglich nen API-Key und Standortsangaben für die Wetter-API ins entsprechende JS-File pappen. That's it.

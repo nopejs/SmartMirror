@@ -1,0 +1,56 @@
+<!doctype HTML>
+<html>
+    <head lang="de">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        
+        <title>Smart Mirror 2.0 - nopeJS</title>
+        
+        <meta name="description" lang="de" content="Smart Mirror 2.0 - nopeJS">
+
+        <link rel="stylesheet" href="styles/css/main.css" />
+        <link rel="stylesheet" href="styles/css/newsslider.css" />
+        <script src="js/news.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.getfeed.js"></script>
+        
+        <script>
+        $(function(){
+            timer();            
+            news();
+            weather();
+        });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="clock">
+                <span class="date"><span id="date">01</span>. <span id="month">Januar</span> <span id="year">1970</span></span>
+                <span class="time"><span id="hours">00</span>:<span id="minutes">00</span><span id="seconds">00</span></span>
+            </div>
+            
+            <div class="weather">
+                <span id="sun"><i class="wi wi-sunrise" style="font-size: 0.76em;"></i> <span id="sunrise">00:00</span>  <i class="wi wi-sunset" style="font-size: 0.76em; margin-left: 0.5em;"></i> <span id="sunset">00:00</span></span>
+                <br style="margin-bottom: 0.8em;" />
+                <span id="conditions"><i id="currCond" class="wi wi-day-rain-mix" style="font-size: 0.8em;"></i> <span id="curTemp">00</span><i class="wi wi-celsius"></i></span>
+                <table class="forecast">
+                    <thead style="line-height: 1.6em;">
+                        <tr><td colspan="4" style="text-align:right;">Vorhersage</td></tr>
+                    </thead>
+                    <tbody id="forecasts">
+                        <!-- Will be filled automatically by weather.js -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="newswrapper">
+                <div id="slider">
+                    <div id="newsslider" class="container">
+                        <!-- Will be filled automatically by news.js -->                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
